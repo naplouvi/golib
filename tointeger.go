@@ -2,7 +2,8 @@ package golib
 
 import "strconv"
 
-func toInteger(str string) int {
+// ToInteger takes a string an returns an integer
+func ToInteger(str string) int {
 	intValue, err := strconv.Atoi(str)
 	if err != nil {
 		panic(err)
